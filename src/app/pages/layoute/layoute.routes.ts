@@ -8,7 +8,7 @@ export const ROUTES: Routes = [
         component: LayoutePageComponent,
         children: [
             { path: 'home', component: HomePageComponent },
-            { path: '', redirectTo: '/home', pathMatch: 'full' }
+            { path: '', redirectTo: '/login', pathMatch: 'full' }
         ]
     }
 ];
