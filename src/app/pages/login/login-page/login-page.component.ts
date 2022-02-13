@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AlertService } from '../../../services/alert.service';
 
 @Component({
   selector: 'app-login-page',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPageComponent implements OnInit {
 
-  constructor() { 
+  constructor( private alert: AlertService, private roueter: Router ) { 
 
     const body = Array.from(document.getElementsByTagName('body'));
       body.forEach((element) => {
@@ -17,6 +19,14 @@ export class LoginPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  login() {
+    this.roueter.navigate(['home']);
+    // this.alert.inputAlert();
+    // this.alert.confirm('Seguro que deses ingresar', 'Iniciaras sesion', 'info').then(result => {
+    //   console.log(result);
+    // });
   }
 
 }
