@@ -8,7 +8,7 @@ import { HomeModule } from './pages/home/home.module';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
 import { LoginModule } from './pages/login/login.module';
-import { LayouteModule } from './pages/layoute/layoute.module';
+import { LayoutModule } from './pages/layout/layout.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { LayouteModule } from './pages/layoute/layoute.module';
     SharedModule,
     HomeModule,
     LoginModule,
-    LayouteModule
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
