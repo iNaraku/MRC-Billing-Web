@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-layout-page',
-  templateUrl: './layout-page.component.html',
-  styleUrls: ['./layout-page.component.css']
+  selector: 'app-layout',
+  templateUrl: './layout.component.html',
+  styleUrls: ['./layout.component.css']
 })
 export class LayoutPageComponent implements OnInit {
 

@@ -7,7 +7,7 @@ import { SharedModule } from './shared/shared.module';
 import { HomeModule } from './pages/home/home.module';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
-import { LoginModule } from './pages/login/login.module';
+import { LoginModule } from './login/login.module';
 import { LayoutModule } from './pages/layout/layout.module';
 
 @NgModule({
